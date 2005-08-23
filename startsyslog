@@ -1,0 +1,21 @@
+#!/bin/sh
+# startsyslog - Start syslogd and show logging messages
+# (C) Klaus Knopper Jun 2001
+
+PATH="/bin:/sbin:/usr/bin:/usr/sbin:/usr/X11R6/bin"
+export PATH
+
+TITLE="SYSLOG"
+
+# LANG et al.
+[ -f /etc/sysconfig/i18n ] && . /etc/sysconfig/i18n
+
+RXVT=""
+[ -n "$DISPLAY" ] && RXVT="rxvt -T $TITLE -bg black -fg green -cr red -e"
+[ "`id -u`" != "0" ] && exec $RXVT sudo "$0" "$@"
+
+[ -x /etc/init.d/sysklogd ] && /etc/init.d/sysklogd start
+
+tail -f /var/log/syslog
+
+exit 0

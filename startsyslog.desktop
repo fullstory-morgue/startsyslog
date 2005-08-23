@@ -1,0 +1,10 @@
+[Desktop Entry]
+Comment[de]=SYSLOG starten
+Comment[es]=Arrancar SYSLOG
+Comment=Start SYSLOG
+Exec=gksu -- /usr/sbin/startsyslog
+Icon=startsyslog
+Name[de]=SYSLOG starten
+Name[es]=Arrancar SYSLOG
+Name=Start SYSLOG
+Type=Application
