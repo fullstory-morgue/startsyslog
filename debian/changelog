@@ -1,8 +1,10 @@
-startsyslog-kanotix (0.5.5) UNRELEASED; urgency=low
+startsyslog-kanotix (0.5.5) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * remove cdbs auto-update feature.
+  * remove knoppix virtual packages.
+  * bump compat level to 5.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 24 Aug 2005 13:36:45 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 17 Dec 2005 03:30:19 +0100
 
 startsyslog-kanotix (0.5.4) unstable; urgency=low
 
