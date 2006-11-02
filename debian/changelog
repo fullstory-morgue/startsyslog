@@ -1,9 +1,10 @@
-startsyslog-kanotix (0.5.6) UNRELEASED; urgency=low
+startsyslog-kanotix (0.5.6) unstable; urgency=low
 
-  * NOT RELEASED YET.
   * fix lintian errors.
+  * don't add /usr/X11R6/bin/ to search path.
+  * get rid of useless /etc/sysconfig/ dependency.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu,  2 Nov 2006 14:22:07 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu,  2 Nov 2006 22:39:27 +0100
 
 startsyslog-kanotix (0.5.5) unstable; urgency=low
 

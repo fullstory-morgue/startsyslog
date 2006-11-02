@@ -7,5 +7,6 @@ Standards-Version: 3.7.2
 
 Package: startsyslog-kanotix
 Architecture: all
+Depends: sysklogd, kanotix-su
 Description: Starts syslog server
  Enable sysklogd and traces content of /var/log/syslog
