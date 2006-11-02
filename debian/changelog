@@ -1,8 +1,9 @@
 startsyslog-kanotix (0.5.6) UNRELEASED; urgency=low
 
-  * NOT RELEASED YET
+  * NOT RELEASED YET.
+  * fix lintian errors.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 17 Dec 2005 03:31:31 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu,  2 Nov 2006 14:22:07 +0100
 
 startsyslog-kanotix (0.5.5) unstable; urgency=low
 
