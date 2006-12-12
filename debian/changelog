@@ -2,7 +2,10 @@ startsyslog-sidux (0.5.9) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue,  5 Dec 2006 14:39:52 +0100
+  * use su-me on the desktop entry
+  * use generix x-terminal-emulator instead of rxvt 
+
+ -- Joaquim Boura <x-un-i@sidux.com>  Tue, 12 Dec 2006 13:11:55 +0100
 
 startsyslog-sidux (0.5.8) unstable; urgency=low
 

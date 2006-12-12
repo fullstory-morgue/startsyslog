@@ -8,7 +8,7 @@ export PATH
 TITLE="SYSLOG"
 
 RXVT=""
-[ -n "$DISPLAY" ] && RXVT="rxvt -T $TITLE -bg black -fg green -cr red -e"
+[ -n "$DISPLAY" ] && RXVT="x-terminal-emulator -T $TITLE -bg black -fg green  -e"
 [ "`id -u`" != "0" ] && exec $RXVT su-me "$0" "$@"
 
 [ -x /etc/init.d/sysklogd ] && /etc/init.d/sysklogd start
