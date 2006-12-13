@@ -1,6 +1,4 @@
-startsyslog-sidux (0.5.9) UNRELEASED; urgency=low
-
-  * NOT RELEASED YET
+startsyslog-sidux (0.5.9) unstable; urgency=low
 
   * use su-me on the desktop entry
   * use generix x-terminal-emulator instead of rxvt 
