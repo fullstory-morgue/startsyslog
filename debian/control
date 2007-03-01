@@ -8,7 +8,6 @@ Standards-Version: 3.7.2
 Package: startsyslog-sidux
 Architecture: all
 Depends: sysklogd, su-me
-Conflicts: startsyslog-kanotix
 Recommends: xterm | x-terminal-emulator
 Description: Starts syslog server
  Enable sysklogd and traces content of /var/log/syslog
