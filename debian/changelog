@@ -1,3 +1,9 @@
+startsyslog-sidux (0.5.11) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu,  1 Mar 2007 19:36:33 +0100
+
 startsyslog-sidux (0.5.10) unstable; urgency=low
 
   * startsyslog-kanotix was never part of sidux or debian, don't conflict with
