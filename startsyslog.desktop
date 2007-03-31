@@ -8,3 +8,4 @@ Name[de]=SYSLOG starten
 Name[es]=Arrancar SYSLOG
 Name=Start SYSLOG
 Type=Application
+Categories=sidux;Services

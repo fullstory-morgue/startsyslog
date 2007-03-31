@@ -1,8 +1,8 @@
-startsyslog-sidux (0.5.11) UNRELEASED; urgency=low
+startsyslog-sidux (0.5.11) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * move to xdg.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu,  1 Mar 2007 19:36:33 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 31 Mar 2007 04:50:12 +0200
 
 startsyslog-sidux (0.5.10) unstable; urgency=low
 
