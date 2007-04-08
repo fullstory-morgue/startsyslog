@@ -1,12 +1,12 @@
-startsyslog-sidux (0.5.12) UNRELEASED; urgency=low
-
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
+startsyslog-sidux (0.5.12) unstable; urgency=low
 
   [ Joaquim Boura ]
   * set new icon
 
- -- Joaquim Boura <x-un-i@sidux.com>  Sat, 07 Apr 2007 15:11:39 +0200
+  [ Stefan Lippers-Hollmann ]
+  * fix debian/copyright.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 09 Apr 2007 01:09:55 +0200
 
 startsyslog-sidux (0.5.11) unstable; urgency=low
 
