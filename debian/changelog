@@ -1,9 +1,5 @@
-startsyslog-sidux (0.5.13) UNRELEASED; urgency=low
+startsyslog-sidux (0.5.13) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Joaquim Boura ]
   * new icon sidux-syslog.
 
  -- Joaquim Boura <x-un-i@sidux.com>  Sun, 29 Apr 2007 20:53:51 +0200
