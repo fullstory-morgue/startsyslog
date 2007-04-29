@@ -1,8 +1,12 @@
 startsyslog-sidux (0.5.13) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 09 Apr 2007 01:11:22 +0200
+  [ Joaquim Boura ]
+  * new icon sidux-syslog.
+
+ -- Joaquim Boura <x-un-i@sidux.com>  Sun, 29 Apr 2007 20:53:51 +0200
 
 startsyslog-sidux (0.5.12) unstable; urgency=low
 
