@@ -1,8 +1,8 @@
-startsyslog-sidux (0.5.15) UNRELEASED; urgency=low
+startsyslog-sidux (0.5.15) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * prefer lower case in *.desktop files.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 30 Apr 2007 01:26:53 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 24 May 2007 23:43:10 +0200
 
 startsyslog-sidux (0.5.14) unstable; urgency=low
 

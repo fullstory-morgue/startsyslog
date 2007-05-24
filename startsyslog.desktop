@@ -1,11 +1,11 @@
 [Desktop Entry]
-Comment[de]=SYSLOG starten
-Comment[es]=Arrancar SYSLOG
-Comment=Start SYSLOG
+Comment[de]=syslog starten
+Comment[es]=Arrancar syslog
+Comment=Start syslog
 Exec=su-me /usr/sbin/startsyslog
 Icon=sidux-syslog
-Name[de]=SYSLOG starten
-Name[es]=Arrancar SYSLOG
-Name=Start SYSLOG
+Name[de]=syslog starten
+Name[es]=Arrancar syslog
+Name=Start syslog
 Type=Application
 Categories=sidux;Services
