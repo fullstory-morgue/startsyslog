@@ -1,4 +1,4 @@
-startsyslog-sidux (0.5.16) UNRELEASED; urgency=low
+startsyslog-sidux (0.5.16) unstable; urgency=low
 
   * Add debian menu entry. Build-Depend on imagemagick.
 
