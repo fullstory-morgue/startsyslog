@@ -1,3 +1,9 @@
+startsyslog-sidux (0.5.17) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 17 Jun 2007 16:15:09 +0200
+
 startsyslog-sidux (0.5.16) unstable; urgency=low
 
   * Add debian menu entry. Build-Depend on imagemagick.
