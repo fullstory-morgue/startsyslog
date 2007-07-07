@@ -2,7 +2,7 @@
 Comment[de]=syslog starten
 Comment[es]=Arrancar syslog
 Comment=Start syslog
-Exec=su-me x-terminal-emulator -e /usr/sbin/startsyslog
+Exec=x-terminal-emulator -e /usr/sbin/startsyslog
 Icon=sidux-syslog
 Name[de]=syslog starten
 Name[es]=Arrancar syslog
