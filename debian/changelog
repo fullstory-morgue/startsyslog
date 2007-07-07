@@ -1,8 +1,8 @@
 startsyslog-sidux (0.5.17) UNRELEASED; urgency=low
 
-  * NOT RELEASED YET
+  * Make script work.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 17 Jun 2007 16:15:09 +0200
+ -- Kel Modderman <kel@otaku42.de>  Sat, 07 Jul 2007 14:17:18 +1000
 
 startsyslog-sidux (0.5.16) unstable; urgency=low
 

@@ -1,19 +1,19 @@
 #!/bin/sh
 # startsyslog - Start syslogd and show logging messages
 # (C) Klaus Knopper Jun 2001
+# (C) 2007  Kel Modderman <kel@otaku42.de>
 
 PATH="/bin:/sbin:/usr/bin:/usr/sbin"
 export PATH
 
-TITLE="SYSLOG"
+[ "$(id -u)" -eq 0 ] || exec su-me "$0" "$@"
 
-RXVT=""
-[ -n "$DISPLAY" ] && RXVT="x-terminal-emulator -T $TITLE -bg black -fg green  -e"
-[ "`id -u`" != "0" ] && exec $RXVT su-me "$0" "$@"
-
-[ -x /etc/init.d/sysklogd ] && /etc/init.d/sysklogd start
-
-tail -f /var/log/syslog
+if [ -x /etc/init.d/sysklogd ] && invoke-rc.d sysklogd start; then
+	if [ "$DISPLAY" ]; then
+		x-terminal-emulator -e tail -f /var/log/syslog
+	else
+		tail -f /var/log/syslog
+	fi
+fi
 
 exit 0
-
