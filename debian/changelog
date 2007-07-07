@@ -1,12 +1,16 @@
-startsyslog-sidux (0.5.17) UNRELEASED; urgency=low
+startsyslog-sidux (0.5.17) unstable; urgency=low
 
+  [ Kel Modderman ]
   * Make script work.
   * Use reload-or-restart argument to /etc/init.d/sysklogd.
   * If started by desktop file, use x-terminal-emulator.
   * Bail out if syslog not installed.
-  * Drop su-me from desktop file. 
+  * Drop su-me from desktop file.
 
- -- Kel Modderman <kel@otaku42.de>  Sat, 07 Jul 2007 15:30:13 +1000
+  [ Stefan Lippers-Hollmann ]
+  * fix debian menu.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 07 Jul 2007 15:46:58 +0200
 
 startsyslog-sidux (0.5.16) unstable; urgency=low
 

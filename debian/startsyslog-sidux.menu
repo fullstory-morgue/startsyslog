@@ -1,4 +1,5 @@
-?package(startsyslog-sidux):needs="text" \
+?package(startsyslog-sidux): \
+	needs="X11" \
 	section="Apps/System" \
 	hints="sidux,Config" \
 	title="Start syslog" \
