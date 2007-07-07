@@ -8,12 +8,16 @@ export PATH
 
 [ "$(id -u)" -eq 0 ] || exec su-me "$0" "$@"
 
-if [ -x /etc/init.d/sysklogd ] && invoke-rc.d sysklogd reload-or-restart; then
-	if [ "$DISPLAY" ]; then
-		x-terminal-emulator -e tail -f /var/log/syslog
-	else
-		tail -f /var/log/syslog
-	fi
+if [ ! -x /etc/init.d/sysklogd ]; then
+	echo "syslogd not installed, aborting."
+	exit 1
+fi
+
+if invoke-rc.d sysklogd reload-or-restart; then
+	tail -f /var/log/syslog
+else
+	echo "syslogd failed to start, aborting."
+	exit 2
 fi
 
 exit 0

@@ -2,8 +2,10 @@ startsyslog-sidux (0.5.17) UNRELEASED; urgency=low
 
   * Make script work.
   * Use reload-or-restart argument to /etc/init.d/sysklogd.
+  * If started by desktop file, use x-terminal-emulator.
+  * Bail out if syslog not installed.
 
- -- Kel Modderman <kel@otaku42.de>  Sat, 07 Jul 2007 14:26:18 +1000
+ -- Kel Modderman <kel@otaku42.de>  Sat, 07 Jul 2007 15:20:05 +1000
 
 startsyslog-sidux (0.5.16) unstable; urgency=low
 
