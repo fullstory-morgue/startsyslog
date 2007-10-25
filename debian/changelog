@@ -1,11 +1,15 @@
-startsyslog-sidux (0.5.18) UNRELEASED; urgency=low
+startsyslog-sidux (0.5.18) unstable; urgency=low
 
-  * NOT RELEASED YET
+  [ Stefan Lippers-Hollmann ]
   * add VCS control headers.
   * update syntax for Vcs headers in debian/control
   * Update debian menu section as per new subpolicy.
+  * add syslog-ng compatibility.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 25 Oct 2007 22:12:03 +1000
+  [ Kel Modderman ]
+  * Update debian menu section as per new subpolicy.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 25 Oct 2007 16:54:26 +0200
 
 startsyslog-sidux (0.5.17) unstable; urgency=low
 

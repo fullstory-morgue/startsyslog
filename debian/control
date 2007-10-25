@@ -9,7 +9,7 @@ Vcs-Browser: http://svn.berlios.de/wsvn/fullstory/startsyslog-sidux/trunk/
 
 Package: startsyslog-sidux
 Architecture: all
-Depends: sysklogd, su-me, sidux-xdg
-Recommends: xterm | x-terminal-emulator
+Depends: sysklogd | syslog-ng, su-me
+Recommends: xterm | x-terminal-emulator, sidux-xdg
 Description: Starts syslog server
- Enable sysklogd and traces content of /var/log/syslog
+ Enable syslog dæmon and trace contents of /var/log/syslog

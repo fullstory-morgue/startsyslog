@@ -1,23 +1,28 @@
 #!/bin/sh
 # startsyslog - Start syslogd and show logging messages
 # (C) Klaus Knopper Jun 2001
-# (C) 2007  Kel Modderman <kel@otaku42.de>
+# (C) 2007 Kel Modderman <kel@otaku42.de>
+# (C) 2007 Stefan Lippers-Hollmann <s.l-h@gmx.de>
 
 PATH="/bin:/sbin:/usr/bin:/usr/sbin"
 export PATH
 
 [ "$(id -u)" -eq 0 ] || exec su-me "$0" "$@"
 
-if [ ! -x /etc/init.d/sysklogd ]; then
-	echo "syslogd not installed, aborting."
+if [ -x /etc/init.d/sysklogd ]; then
+	if ! invoke-rc.d sysklogd reload-or-restart; then
+		echo "syslogd failed to start, aborting."
+		exit 2
+	fi
+elif [ -x /etc/init.d/syslog-ng ]; then
+	if ! invoke-rc.d syslog-ng reload-or-restart; then
+		echo "syslog-ng failed to start, aborting."
+		exit 3
+	fi
+else
+	echo "no suitable syslog dæmon found, aborting."
 	exit 1
 fi
 
-if invoke-rc.d sysklogd reload-or-restart; then
-	tail -f /var/log/syslog
-else
-	echo "syslogd failed to start, aborting."
-	exit 2
-fi
+tail -f /var/log/syslog
 
-exit 0
