@@ -1,8 +1,9 @@
 startsyslog-sidux (0.5.20) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * update to Standards-Version 3.7.3, no changes necessary.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 25 Oct 2007 17:01:47 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 03 Dec 2007 15:06:05 +0100
 
 startsyslog-sidux (0.5.19) unstable; urgency=low
 
