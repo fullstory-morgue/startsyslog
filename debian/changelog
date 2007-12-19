@@ -1,9 +1,5 @@
-startsyslog-sidux (0.5.21) UNRELEASED; urgency=low
+startsyslog-sidux (0.5.21) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Joaquim Boura ]
   * Translation thanks to RoEn
 
  -- Joaquim Boura <x-un-i@sidux.com>  Tue, 18 Dec 2007 13:25:29 +0100
