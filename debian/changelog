@@ -1,8 +1,8 @@
-startsyslog-sidux (0.6.2) UNRELEASED; urgency=low
+startsyslog-sidux (0.6.2) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * startsyslog is cli-only, fix the embedded su-to-root implementation.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 08 Jan 2008 23:02:49 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 09 Jan 2008 04:29:07 +0100
 
 startsyslog-sidux (0.6.1) unstable; urgency=low
 
