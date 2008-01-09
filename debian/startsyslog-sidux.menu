@@ -1,6 +1,6 @@
 ?package(startsyslog-sidux): \
 	needs="text" \
-	section="Applications/System/Administration" \
+	section="Applications/System/Monitoring" \
 	hints="sidux,Config" \
 	title="Start syslog" \
 	icon32x32="/usr/share/pixmaps/startsyslog-sidux.xpm" \
