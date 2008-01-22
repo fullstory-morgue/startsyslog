@@ -1,14 +1,10 @@
 [Desktop Entry]
-Comment[de]=syslog starten
-Comment[ru]=Запуск syslog
-Comment[es]=Arrancar syslog
-Comment=Start syslog
-Exec=su-to-root -c /usr/sbin/startsyslog
-Terminal=yes
-Icon=sidux-syslog
-Name[de]=syslog starten
-Name[ru]=Запуск syslog
-Name[es]=Arrancar syslog
-Name=Start syslog
+Encoding=UTF-8
 Type=Application
+Exec=su-to-root -c /usr/sbin/startsyslog
+Icon=startsyslog
+Terminal=yes
+Name=startsyslog
+GenericName=start/watch syslog
+GenericName[de]=syslog starten/ überwachen
 Categories=System;

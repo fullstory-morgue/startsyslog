@@ -1,8 +1,8 @@
-?package(startsyslog-sidux): \
+?package(startsyslog): \
 	needs="text" \
 	section="Applications/System/Monitoring" \
 	hints="sidux,Config" \
 	title="Start syslog" \
-	icon32x32="/usr/share/pixmaps/startsyslog-sidux.xpm" \
-	icon16x16="/usr/share/pixmaps/startsyslog-sidux-16.xpm" \
+	icon32x32="/usr/share/pixmaps/startsyslog.xpm" \
+	icon16x16="/usr/share/pixmaps/startsyslog-16.xpm" \
 	command="su-to-root -c /usr/sbin/startsyslog"

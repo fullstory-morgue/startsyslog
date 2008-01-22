@@ -1,15 +1,26 @@
-Source: startsyslog-sidux
+Source: startsyslog
 Section: admin
-Priority: optional
+Priority: extra
 Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
-Build-Depends: cdbs, debhelper (>= 6), imagemagick
+Build-Depends: cdbs, debhelper (>= 6)
 Standards-Version: 3.7.3
 Vcs-Svn: svn://svn.berlios.de/fullstory/startsyslog-sidux/trunk
 Vcs-Browser: http://svn.berlios.de/wsvn/fullstory/startsyslog-sidux/trunk/
 
-Package: startsyslog-sidux
+Package: startsyslog
 Architecture: all
 Depends: syslog-ng | sysklogd
 Recommends: menu, xterm | x-terminal-emulator
+Provides: startsyslog-sidux
+Replaces: startsyslog-sidux
 Description: Starts syslog server
  Enable syslog daemon and trace contents of /var/log/syslog
+
+Package: startsyslog-sidux
+Architecture: all
+Depends: startsyslog
+Description: Starts syslog server (transitional dummy package)
+ Enable syslog daemon and trace contents of /var/log/syslog
+ .
+ startsyslog-sidux has been renamed (back) to startsyslog, the remaining
+ transitional dummy package can be safely removed.
