@@ -1,12 +1,12 @@
-startsyslog (0.6.5) UNRELEASED; urgency=low
-
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
+startsyslog (0.6.5) unstable; urgency=low
 
   [ Bernard Gray ]
-  * convert text objects to path in icon 
+  * convert text objects to path in icon
 
- -- Bernard Gray <bernard.gray@gmail.com>  Wed, 23 Jan 2008 17:13:21 +1100
+  [ Stefan Lippers-Hollmann ]
+  * refresh PNG icons.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 23 Jan 2008 18:07:27 +0100
 
 startsyslog (0.6.4) unstable; urgency=low
 
