@@ -20,6 +20,11 @@ elif [ -x /etc/init.d/syslog-ng ]; then
 		echo "syslog-ng failed to start, aborting."
 		exit 3
 	fi
+elif [ -x /etc/init.d/rsyslog ]; then
+	if ! invoke-rc.d rsyslog restart; then
+		echo "rsyslog failed to start, aborting."
+		exit 3
+	fi
 else
 	echo "no suitable syslog dæmon found, aborting."
 	exit 1
