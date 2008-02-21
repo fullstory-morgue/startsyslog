@@ -1,6 +1,7 @@
-startsyslog (0.6.7) UNRELEASED; urgency=low
+startsyslog (0.6.7) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * revert to syslog-ng as default.
+  * appease lintian and write (C) as © in debian/copyright.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 29 Jan 2008 01:23:14 +0100
 
