@@ -1,8 +1,8 @@
-startsyslog (0.6.8) UNRELEASED; urgency=low
+startsyslog (0.6.8) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * really revert to syslog-ng as default.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 21 Feb 2008 01:32:58 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 26 Feb 2008 16:24:01 +0100
 
 startsyslog (0.6.7) unstable; urgency=low
 
