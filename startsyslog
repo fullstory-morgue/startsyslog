@@ -7,27 +7,24 @@
 if [ "$(id -u)" -ne 0 ]; then
 	[ -x "$(which su-to-root)" ] && exec su-to-root -c "$0"
 	printf "ERROR: $0 needs root capabilities, please start it as root.\n\n" >&2
-	exit 4
+	exit 1
 fi
 
 if [ -x /etc/init.d/sysklogd ]; then
-	if ! invoke-rc.d sysklogd restart; then
-		echo "syslogd failed to start, aborting."
-		exit 2
-	fi
+	SYSTEMLOGGER=sysklogd
 elif [ -x /etc/init.d/syslog-ng ]; then
-	if ! invoke-rc.d syslog-ng restart; then
-		echo "syslog-ng failed to start, aborting."
-		exit 3
-	fi
+	SYSTEMLOGGER=syslog-ng
 elif [ -x /etc/init.d/rsyslog ]; then
-	if ! invoke-rc.d rsyslog restart; then
-		echo "rsyslog failed to start, aborting."
-		exit 3
-	fi
+	SYSTEMLOGGER=rsyslog
 else
 	echo "no suitable syslog dæmon found, aborting."
-	exit 1
+	exit 2
+fi
+
+invoke-rc.d "${SYSTEMLOGGER}" stop >/dev/null 2>&1
+if ! invoke-rc.d "${SYSTEMLOGGER}" start; then
+	echo "${SYSTEMLOGGER} failed to start, aborting."
+	exit 3
 fi
 
 tail -f /var/log/syslog

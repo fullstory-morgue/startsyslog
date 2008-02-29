@@ -1,8 +1,12 @@
 startsyslog (0.6.9) UNRELEASED; urgency=low
 
-  * NOT RELEASED YET
+  * Refactor way system-logging daemon is started. Do not use restart|reload
+    argument to service, this does not ensure preparatory actions (such as
+    creating of /dev/xconsole) are performed, generating alot of errors in the
+    logs. Always stop the daemon, piping errors to null, bail out if the
+    daemon cannot be started.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 26 Feb 2008 16:25:56 +0100
+ -- Kel Modderman <kel@otaku42.de>  Fri, 29 Feb 2008 16:44:23 +1000
 
 startsyslog (0.6.8) unstable; urgency=low
 
