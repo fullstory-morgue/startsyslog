@@ -1,4 +1,4 @@
-startsyslog (0.6.9) UNRELEASED; urgency=low
+startsyslog (0.6.9) unstable; urgency=low
 
   * Refactor way system-logging daemon is started. Do not use restart|reload
     argument to service, this does not ensure preparatory actions (such as
