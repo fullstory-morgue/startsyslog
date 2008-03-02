@@ -12,19 +12,24 @@ fi
 
 if [ -x /etc/init.d/sysklogd ]; then
 	SYSTEMLOGGER=sysklogd
+	SYSTEMLOGGER_BIN=syslogd
 elif [ -x /etc/init.d/syslog-ng ]; then
 	SYSTEMLOGGER=syslog-ng
+	SYSTEMLOGGER_BIN=syslog-ng
 elif [ -x /etc/init.d/rsyslog ]; then
 	SYSTEMLOGGER=rsyslog
+	SYSTEMLOGGER_BIN=rsyslogd
 else
 	echo "no suitable syslog dæmon found, aborting."
 	exit 2
 fi
 
-invoke-rc.d "${SYSTEMLOGGER}" stop >/dev/null 2>&1
-if ! invoke-rc.d "${SYSTEMLOGGER}" start; then
-	echo "${SYSTEMLOGGER} failed to start, aborting."
-	exit 3
+if [ -z "$(pgrep ${SYSTEMLOGGER_BIN})" ]; then
+	invoke-rc.d "${SYSTEMLOGGER}" stop >/dev/null 2>&1
+	if ! invoke-rc.d "${SYSTEMLOGGER}" start; then
+		echo "${SYSTEMLOGGER} failed to start, aborting."
+		exit 3
+	fi
 fi
 
 tail -f /var/log/syslog

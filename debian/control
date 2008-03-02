@@ -9,7 +9,7 @@ Vcs-Browser: http://svn.berlios.de/wsvn/fullstory/startsyslog-sidux/trunk/
 
 Package: startsyslog
 Architecture: all
-Depends: syslog-ng | rsyslog | sysklogd
+Depends: rsyslog | syslog-ng | sysklogd
 Recommends: menu, xterm | x-terminal-emulator
 Provides: startsyslog-sidux
 Replaces: startsyslog-sidux

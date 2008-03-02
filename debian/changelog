@@ -1,8 +1,9 @@
-startsyslog (0.6.10) UNRELEASED; urgency=low
+startsyslog (0.6.10) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * don't restart already syslog dæmons.
+  * give rsyslog another chance.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 29 Feb 2008 14:21:46 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 02 Mar 2008 13:58:26 +0100
 
 startsyslog (0.6.9) unstable; urgency=low
 
