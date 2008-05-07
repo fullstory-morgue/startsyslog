@@ -1,3 +1,9 @@
+startsyslog (0.6.12) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 07 May 2008 02:41:34 +0200
+
 startsyslog (0.6.11) unstable; urgency=low
 
   * switch to the new dh implementation of debhelper 7.
