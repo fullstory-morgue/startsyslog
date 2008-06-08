@@ -15,12 +15,3 @@ Provides: startsyslog-sidux
 Replaces: startsyslog-sidux
 Description: Starts syslog server
  Enable syslog daemon and trace contents of /var/log/syslog
-
-Package: startsyslog-sidux
-Architecture: all
-Depends: startsyslog
-Description: Starts syslog server (transitional dummy package)
- Enable syslog daemon and trace contents of /var/log/syslog
- .
- startsyslog-sidux has been renamed (back) to startsyslog, the remaining
- transitional dummy package can be safely removed.
