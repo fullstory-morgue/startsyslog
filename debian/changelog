@@ -3,6 +3,7 @@ startsyslog (0.6.14) ORPHANED; urgency=low
   * NOT RELEASED YET
   * OPRHAN PACKAGE, we start a syslog dæmon on default, no need to keep this
     package.
+  * refresh SVG graphics, shut up inkscape's migration from old versions.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 18 Sep 2008 22:53:56 +0200
 
